@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+	  <ion-back-button></ion-back-button>
+	</ion-buttons>
+    <ion-title>Cadastrar Nova Categoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+   <ion-card>
+     <ion-card-header color="primary"> <ion-card-title> Alterar Categoria</ion-card-title></ion-card-header>
+	 
+	 <ion-item>
+	    <ion-label position="stacked"> Digite o nome </ion-label>
+	    <ion-input [(ngModel)]="nome"></ion-input>
+	 </ion-item>
+     <ion-button color="primary" fill="outline" expand="full" (click)="save()"> Salvar </ion-button>  
+   </ion-card>
+</ion-content>
